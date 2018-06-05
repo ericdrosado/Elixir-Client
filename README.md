@@ -1,21 +1,20 @@
-# ElixirClient
+# Elixir Client
 
-**TODO: Add description**
+## Project Requirements
++ Swift 1.6.4+
 
-## Installation
+## Setup
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `elixir_client` to your list of dependencies in `mix.exs`:
+### Clone Repository
+`git clone https://github.com/ericdrosado/Elixir-Client
 
-```elixir
-def deps do
-  [
-    {:elixir_client, "~> 0.1.0"}
-  ]
-end
-```
+### Build Project
++ In the root directory `mix escript.build`.
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixir_client](https://hexdocs.pm/elixir_client).
+## Run Client
 
+### Run
++ In the root directory: `./elixir_client --host=https://erosado-swift-server.herokuapp.com`
+
+### Run Unit Tests
++ In the root directory `mix test`.

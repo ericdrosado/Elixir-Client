@@ -1,12 +1,13 @@
 defmodule ElixirClient do
+  import Client
 
   def main(args) do
-    args |> parse_args |> process
+    args |> parse_args |> process 
   end
 
   defp parse_args(args) do
     {options, _, _} = OptionParser.parse(args, 
-                                         switches: [host: :string, directory: :string])
+                                         switches: [host: :string])
     options
   end
 
@@ -15,7 +16,7 @@ defmodule ElixirClient do
   end
 
   defp process(options) do
-    "Host: #{options[:host]} Directory: #{options[:directory]}"
+    get(options[:host])
   end
 
 end
